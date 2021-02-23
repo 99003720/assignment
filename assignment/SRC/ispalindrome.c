@@ -1,15 +1,21 @@
 #include "myutils.h"
-int isPalindrome()
+int isPalindrome(num)
 {
- char s1[20]="12321";
- char s2[20]="12321";
+   int reverse = 0, remainder, original;
+while (num != 0) {
+        remainder = num % 10;
+        reverse = reverse * 10 + remainder;
+        num /= 10;
+    }
 
- if(!strcmp(s1,s2))
+    // palindrome if orignalN and reversedN are equal
+    if (original == reverse)
     {
- printf("\n Is a Palindrome");
+         return 1;
     }
- else
-    {
- printf("\n Is Not a Palindrome");
-    }
+    else
+        {
+           return 0;
+        }
+    return 0;
 }

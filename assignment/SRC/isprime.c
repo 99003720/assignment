@@ -1,19 +1,19 @@
 #include"myutils.h"
 
-int isPrime()
+int isPrime(int input)
 {
- int i,inp,op=0;
- for(i=2;i<=inp/2;i++)
+ int i,input,output=0;
+ for(int i=2;i<=input/2;i++)
     {
- if((inp%i)==0)
+ if((input%i)==0)
         {
- op=1;
- printf("\nNot Prime");
+ output=1;
+ return 0;
  break;
         }
     }
- if(op==0)
+ if(output==0)
     {
- printf("Prime");
-    }
+ return 0;
+     }
 }

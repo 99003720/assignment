@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int isPalindrome();
+int isPalindrome(num);
 int isPrime();
 
 typedef enum error_o{
