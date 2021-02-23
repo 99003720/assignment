@@ -10,19 +10,19 @@ error_o find_factorial(int num, long* result)
     }
     else if (0 > num)
     {
-        return NEGATIVE_NUMBER;
+        return -1;
     }
     else if (0 == num)
     {
-        return ZERO;
+        return 0;
     }
     else
     {
-        while ( 1 <= num )
+        while (1 <= num)
         {
             *result *= num--;
         }
-        return SUCCESS;
+        return result;
     }
     
 }

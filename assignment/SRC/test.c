@@ -19,15 +19,23 @@ int main() {
 
   length = mystrlen(str_input1);
   printf("Length: %d", length);
-
   printf("Result: %s", mystrcmp(str_input1,str_input2));
-  //fact = find_factorial(4);
-//setans = myset(set_val);
-//resetans = myreset(reset_val);
+
+
+
+int fact=0;
+int fact_val = 4;
+long result = 1;
+fact = find_factorial(fact_val,&result);
+
+
+
 
  char s1[20]="Hello";
  char s2[20]="World";
 printf("%s",mystrcat(s1,s2));
+
+
 
 
 set_val = 0;
@@ -35,9 +43,14 @@ setans = myset(set_val);
 printf("%d",setans);
 
 
+
+
 reset_val = 1;
 resetans = myreset(set_val);
 printf("%d",resetans);
+
+
+
 
 
 int num = 121,ret=0;
