@@ -11,7 +11,7 @@ int main() {
 
  char str_input1[50]="HELLO";
  char str_input2[50];
- int length,set_val,reset_val,setans,resetans,fact;
+ int length,set_val,reset_val,setans,resetans;
  char answer[10];
   set_val = 0;
   reset_val = 1;
