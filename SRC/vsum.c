@@ -16,7 +16,3 @@ int vsum(int a, ...)
  return sum;
 }
 
-int main()
-{
- printf("SUM: %d\n", vsum(4, 2,3,4,5));
-}

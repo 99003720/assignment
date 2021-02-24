@@ -67,17 +67,7 @@ int num = 121,ret=0;
  }
 
 
- int prime_num;
- prime_num = isPrime(num);
-  if(prime_num == 0)
- {
-   printf("Not a prime number");
- }
- else
- {
-   printf("A prime number");
- }
-
+ 
 
 
   return 0;

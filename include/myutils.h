@@ -6,10 +6,4 @@
 int isPalindrome(int num);
 int isPrime();
 
-typedef enum error_o{
-    NEGATIVE_NUMBER = -1,
-    ZERO,
-    SUCCESS
-}error_o;
-
-error_o find_factorial(int num, long* result);
+long find_factorial(int num);

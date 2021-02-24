@@ -3,3 +3,4 @@
 #include <string.h>
 int myset(int x);
 int myreset(int x);
+int flip(int num);

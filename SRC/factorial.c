@@ -1,25 +1,20 @@
 #include "myutils.h"
 
 
-error_o find_factorial(int num, long* result)
+long find_factorial(int num)
 {
    // long temp_result = 1;
-    if(1 == num)
+   long fact = 1;
+    if (num < 0)
     {
-        return num;int fact=0;
-int fact_val = 4;
-long result = 1;
-fact = find_factorial(fact_val,&result);
-    {
-        return 0;
+        return -1;
     }
-    else
-    {
-        while (1 <= num)
-        {
-            *result *= num--;
+        
+    else {
+        for (int i = 1; i <= num; ++i) {
+            fact *= i;
         }
-        return result;
+        return fact;
+       
     }
-    
 }
