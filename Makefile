@@ -1,31 +1,15 @@
-PROJECT_NAME = factorial
-SRC = test_factorial.c\
-factorial.c\
-unity/unity.c
+SRC= SRC/test_case.c\
+	SRC/factorial.c\
+	SRC/flip.c\
+	SRC/ispalindrome.c\
+	SRC/isprime.c\
+	SRC/reset.c\
+	SRC/set.c\
+	SRC/strcmp.c\
+	SRC/strlen.c\
+	SRC/vsum.c
 
-INC =./unity
+INC= -Iinclude
 
-$(PROJECT_NAME).out: $(SRC)
-	gcc $^ -I $(INC) -o $@
-
-test: $(PROJECT_NAME).out
-	./$(PROJECT_NAME).out
-
-analysis:
-	cppcheck $(SRC)
-
-memcheck: $(PROJECT_NAME).out
-	valgrind ./$(PROJECT_NAME).out
-
-coverage:${PROJECT_NAME}.out
-	gcc -fprofile-arcs -ftest-coverage $(SRC) -I $(INC) -o $(PROJECT_NAME).out
-	./${PROJECT_NAME}.out
-	gcov -a $(SRC)
-
-codesize:${PROJECT_NAME}.out
-	size ./${PROJECT_NAME}.out
-
-cppcheck: factorial.c
-	cppcheck factorial.c
-clean:
-		rm -rf *.out *.o documentation/html *.gcov *.gcda *.gcno
+build: $(SRC)
+	gcc $(INC) $(SRC) -o pro.out
