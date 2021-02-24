@@ -1,3 +1,4 @@
+/*
 
 #include "bitmask.h"
 #include "mystring.h"
@@ -30,7 +31,7 @@ fact = find_factorial(fact_val,&result);
 
 
 
-
+/*
  char s1[20]="Hello";
  char s2[20]="World";
 printf("%s",mystrcat(s1,s2));
@@ -38,7 +39,8 @@ printf("%s",mystrcat(s1,s2));
 
 
 
-set_val = 0;
+set_length = mystrlen(str_input1);
+  printf("Length: %d", length);val = 0;
 setans = myset(set_val);
 printf("%d",setans);
 
@@ -81,3 +83,4 @@ int num = 121,ret=0;
   return 0;
 
 }
+*/

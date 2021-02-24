@@ -1,7 +1,7 @@
 #include "myutils.h"
-int isPalindrome(num)
+int isPalindrome(int num)
 {
-   int reverse = 0, remainder, original;
+   int reverse = 0, remainder=0, original=num;
 while (num != 0) {
         remainder = num % 10;
         reverse = reverse * 10 + remainder;
@@ -17,5 +17,5 @@ while (num != 0) {
         {
            return 0;
         }
-    return 0;
+ 
 }
