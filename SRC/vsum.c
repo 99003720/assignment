@@ -3,7 +3,7 @@
 int vsum(int a, ...)
 {
  va_list valist;
- int sum;
+ int sum=0;
  int i;
 
  va_start(valist,a);
